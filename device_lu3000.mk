@@ -20,5 +20,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_lu3000
+PRODUCT_NAME := lge_lu3000
 PRODUCT_DEVICE := lu3000
