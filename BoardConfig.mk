@@ -98,13 +98,13 @@ BOARD_USES_TI_OMAP_MODEM_AUDIO := true
 
 #----- WiFi/BT Module Setting ----- [
 # 수정필요, 마하 순정 파일에 맞게 커스터마이징 해야함.
-#BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
-#BOARD_WLAN_DEVICE           := wl1271
-#BOARD_SOFTAP_DEVICE         := wl1271
-#WPA_SUPPLICANT_VERSION      := VER_0_6_X
-#WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/tiwlan_drv.ko"
-#WIFI_DRIVER_MODULE_ARG      := ""
-#WIFI_DRIVER_MODULE_NAME     := "tiwlan_drv"
+BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
+BOARD_WLAN_DEVICE           := wl1271
+BOARD_SOFTAP_DEVICE         := wl1271
+WPA_SUPPLICANT_VERSION      := VER_0_6_X
+WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/mwlan_arpp.ko"
+WIFI_DRIVER_MODULE_ARG      := ""
+WIFI_DRIVER_MODULE_NAME     := "tiwlan_drv"
 #WIFI_EXT_MODULE_PATH        := "/system/lib/modules/sdio.ko"
 #WIFI_EXT_MODULE_NAME        := "sdio"
 #WIFI_FIRMWARE_LOADER        := "wlan_loader"
