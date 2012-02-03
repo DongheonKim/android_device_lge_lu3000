@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dummy-rm:root/bootimages/ON_480x800_08fps_0000.rle
+    $(LOCAL_PATH)/bootimages/Booting_ani_480x800_00.rle:root/bootimages/Booting_ani_480x800_00.rle
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
