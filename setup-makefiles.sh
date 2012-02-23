@@ -92,24 +92,25 @@ PRODUCT_COPY_FILES += \\
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/rild:system/bin/rild \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libril.so:system/lib/libril.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libini.so:system/lib/libini.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libril.so:system/lib/libril.so
+#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libini.so:system/lib/libini.so
 
 ## GPS
 PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/lib/liblge-gps.so:system/lib/liblge-gps.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/glgps:system/bin/glgps
+#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \\
 
 ## Sensors
-PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmpl.so:system/lib/libmpl.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmllite.so:system/lib/libmllite.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so
+#PRODUCT_COPY_FILES += \\
+#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmpl.so:system/lib/libmpl.so \\
+#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmllite.so:system/lib/libmllite.so \\
+#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so
 
 ## Wifi
-PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/etc/wifi/fw_bcm4329.bin:system/etc/wifi/fw_bcm4329.bin \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/etc/wifi/fw_bcm4329_ap.bin:system/etc/wifi/fw_bcm4329_ap.bin
+#PRODUCT_COPY_FILES += \\
+#    vendor/__VENDOR__/__DEVICE__/proprietary/etc/wifi/fw_bcm4329.bin:system/etc/wifi/fw_bcm4329.bin \\
+#    vendor/__VENDOR__/__DEVICE__/proprietary/etc/wifi/fw_bcm4329_ap.bin:system/etc/wifi/fw_bcm4329_ap.bin
 
 ## DSP
 PRODUCT_COPY_FILES += \\
@@ -167,8 +168,8 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/dsp/yuvconvert.l64p:system/lib/dsp/yuvconvert.l64p
 
 ## BT Firmware
-PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd
+#PRODUCT_COPY_FILES += \\
+#    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd
 
 ## Camera and related blobs
 PRODUCT_COPY_FILES += \\

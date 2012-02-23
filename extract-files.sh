@@ -26,6 +26,7 @@ mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wifi/softap
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/cert
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/egl
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw
+mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/dsp
 
 # HAL
 adb pull /system/lib/hw/gralloc.omap3.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw
@@ -50,21 +51,23 @@ adb pull /system/bin/pvrsrvinit ../../../vendor/$VENDOR/$DEVICE/proprietary/bin/
 adb pull /system/bin/rild ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/lib/lge-ril.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 adb pull /system/lib/libril.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
-adb pull /system/lib/libini.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+#adb pull /system/lib/libini.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 
 
 # GPS
-adb pull /system/lib/hw/gps.omap3.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw
+#adb pull /system/lib/hw/gps.omap3.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw
 adb pull /system/bin/glgps ../../../vendor/$VENDOR/$DEVICE/proprietary/bin/
+#***NEW
+adb pull /system/lib/liblge-gps.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
 
 # Sensors
-adb pull /system/lib/libmpl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
-adb pull /system/lib/libmllite.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
-adb pull /system/lib/libmlplatform.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
+#adb pull /system/lib/libmpl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
+#adb pull /system/lib/libmllite.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
+#adb pull /system/lib/libmlplatform.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
 
-# Wifi
-adb pull /system/etc/wifi/fw_bcm4329.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wifi/
-adb pull /system/etc/wifi/fw_bcm4329_ap.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wifi/
+# Wifi - 수정필요
+#adb pull /system/etc/wifi/fw_bcm4329.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wifi/
+#adb pull /system/etc/wifi/fw_bcm4329_ap.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wifi/
 
 # DSP Firmware
 adb pull /system/lib/libaffw_2.0.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
@@ -121,7 +124,7 @@ adb pull /system/lib/dsp/wmv9dec_sn.dll64P ../../../vendor/$VENDOR/$DEVICE/propr
 adb pull /system/lib/dsp/yuvconvert.l64p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/dsp/
 
 # BT firmware
-adb pull /system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware/
+#adb pull /system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware/
 
 ## Camera and related blobs
 adb pull /system/lib/libyuvfastconvert.so  ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/

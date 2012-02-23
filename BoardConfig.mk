@@ -29,11 +29,11 @@ TARGET_BOOTLOADER_BOARD_NAME := lu3000
 
 
 
-#+++++++ OVERLAY SETTING +++++++ [
+#+++++++ GRAPHIC SETTING +++++++ [
 ifdef OMAP_ENHANCEMENT
 COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT -DTARGET_OMAP3
 endif
-COMMON_GLOBAL_CFLAGS += -DOVERLAY_NUM_REQBUFFERS=12
+COMMON_GLOBAL_CFLAGS += -DOVERLAY_NUM_REQBUFFERS=6
 #+++++++ OVERLAY SETTING +++++++ ]
 
 #+++++++++ CAMERA & OMX ++++++++ [
@@ -58,10 +58,6 @@ endif
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 TARGET_NO_RECOVERY := true
-#\o/ hahahahahahaha!
-#BOARD_KERNEL_CMDLINE := mem=511M init=/init videoout=omap24xxvout omap_vout_mod.video1_numbuffers=6 omap_vout_mod.vid1_static_vrfb_alloc=y vram=7M,0x9f800000 omapfb.vram=0:5M rs=c console=/dev/null
-#BOARD_KERNEL_BASE := 0x20000000
-#BOARD_KERNEL_PAGESIZE := 2048
 #********* KERNEL COMPILIZATION OPTION ********* >
 
 
