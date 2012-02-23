@@ -62,18 +62,25 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init_lgt.vsnet:system/etc/init_lgt.vsnet 
 #    $(LOCAL_PATH)/configs/ipc_channels.config:system/etc/ipc_channels.config \
 
-## GPS
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
 ## Wifi
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifimac/wlan-precheck:system/bin/wlan-precheck \
     $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    $(LOCAL_PATH)/configs/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
-#    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko \
-#    $(LOCAL_PATH)/configs/nvram.txt:system/etc/wifi/nvram.txt \
+    $(LOCAL_PATH)/configs/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+    $(LOCAL_PATH)/prebuilt/mwlan_aarp.ko:system/lib/modules/mwlan_aarp.ko \
+    $(LOCAL_PATH)/configs/firmware.bin:system/etc/wifi/firmware.bin \
+    $(LOCAL_PATH)/prebuilt/tiwlan_drv.ko:system/etc/wifi/tiwlan_drv.ko \
+    $(LOCAL_PATH)/configs/firmware_ap.bin:system/etc/wifi/softap/firmware_ap.bin \
+    $(LOCAL_PATH)/prebuilt/tiap_drv.ko:system/etc/wifi/softap/tiap_drv.ko \
+    $(LOCAL_PATH)/configs/udhcpdWlan.conf:system/etc/wifi/softap/udhcpdWlan.conf \
+    $(LOCAL_PATH)/prebuilt/ap_start:system/etc/wifi/softap/scripts/ap_start \
+    $(LOCAL_PATH)/prebuilt/ap_stop:system/etc/wifi/softap/scripts/ap_stop \
+    $(LOCAL_PATH)/prebuilt/nat_stat:system/etc/wifi/softap/scripts/nat_stat
 
 ## Alsa configs
 PRODUCT_COPY_FILES += \
