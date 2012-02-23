@@ -66,6 +66,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
+# POWERVR
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powervr.ini:system/etc/powervr.ini
+
 ## Wifi
 
 PRODUCT_COPY_FILES += \
@@ -130,7 +134,11 @@ PRODUCT_PACKAGES += \
 # OpenMAX IL configuration
 TI_OMX_POLICY_MANAGER := hardware/ti/omx/system/src/openmax_il/omx_policy_manager
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    $(LOCAL_PATH)/configs/vomeComp.cfg:system/etc/vomeComp.cfg \
+    $(LOCAL_PATH)/configs/vomeCore.cfg:system/etc/vomeCore.cfg \
+    $(LOCAL_PATH)/configs/vomeplay.cfg:system/etc/vomeplay.cfg \
+    $(LOCAL_PATH)/configs/vommcodec.cfg:system/etc/vommcodec.cfg
 
 PRODUCT_PACKAGES += \
     libomap_mm_library_jni
