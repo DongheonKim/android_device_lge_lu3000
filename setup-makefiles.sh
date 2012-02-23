@@ -171,6 +171,15 @@ PRODUCT_COPY_FILES += \\
 #PRODUCT_COPY_FILES += \\
 #    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd
 
+##Firmware
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/TIInitRf.bts:system/etc/firmware/TIInitRf.bts \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/avpr.bts:system/etc/firmware/avpr.bts \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/fm_rx_init_1273.2.bts:system/etc/firmware/fm_rx_init_1273.2.bts \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/fm_tx_init_1273.2.bts:system/etc/firmware/fm_tx_init_1273.2.bts \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/fmc_init_1273.2.bts:system/etc/firmware/fmc_init_1273.2.bts \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/tiinit_7.2.31.bts:system/etc/firmware/tiinit_7.2.31.bts \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/firmware/vac_config.ini:system/etc/firmware/vac_config.ini
+
 ## Camera and related blobs
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libyuvfastconvert.so:system/lib/libyuvfastconvert.so \\

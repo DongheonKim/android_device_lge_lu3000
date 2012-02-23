@@ -123,8 +123,14 @@ adb pull /system/lib/dsp/wmadec_sn.dll64P ../../../vendor/$VENDOR/$DEVICE/propri
 adb pull /system/lib/dsp/wmv9dec_sn.dll64P ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/dsp/
 adb pull /system/lib/dsp/yuvconvert.l64p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/dsp/
 
-# BT firmware
-#adb pull /system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware/
+# Firmware Files(?)
+adb pull /system/etc/firmware/TIInitRf.bts  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
+adb pull /system/etc/firmware/avpr.bts  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
+adb pull /system/etc/firmware/fm_rx_init_1273.2.bts  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
+adb pull /system/etc/firmware/fm_tx_init_1273.2.bts  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
+adb pull /system/etc/firmware/fmc_init_1273.2.bts  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
+adb pull /system/etc/firmware/tiinit_7.2.31.bts  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
+adb pull /system/etc/firmware/vac_config.ini  ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware
 
 ## Camera and related blobs
 adb pull /system/lib/libyuvfastconvert.so  ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/
